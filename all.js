@@ -49,3 +49,26 @@ let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 // 3
 // const bigger = numbers.filter(x => x > 5);
 // console.log(bigger);
+
+// const students = [
+//     { id: 11, name: 'tasib' },
+//     { id: 22, name: 'rafi' },
+//     { id: 33, name: 'rakib' }
+// ];
+
+// 1
+// const result = [];
+// for (let i = 0; i < students.length; i++) {
+//     const element = students[i];
+//     const name = element.name;
+//     result.push(name);
+// }
+// console.log(result);
+
+// // 2 --> map
+// const studentsName = students.map(x => x.name);
+// console.log(studentsName);
+
+// // 3 --> filter
+// const ids = students.filter(x => x.id > 20);
+// console.log(ids)
