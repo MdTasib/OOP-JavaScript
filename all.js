@@ -72,3 +72,30 @@ let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 // // 3 --> filter
 // const ids = students.filter(x => x.id > 20);
 // console.log(ids)
+
+// Array slice, splice, array join elements
+// const nums = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+// slice
+// const numsSlice = nums.slice(2, 5);
+// console.log(numsSlice);
+// console.log(nums)
+
+// splice 
+// 1
+// const numsSplice = nums.splice(2, 5); // index number 2 er por teke 5 ta element delete.
+// console.log(numsSplice);
+// console.log(nums);
+
+// 2
+// const numsSplice = nums.splice(2, 5, 10, 11, 12, 13); // index number 2 er por teke 5 ta element delete korde and sei jaiga golote noton element golo add hoa jabe.
+// console.log(numsSplice);
+// console.log(nums);
+
+
+// join
+// const numsJoin = nums.join(',');
+// const numsJoinTwo = nums.join('/');
+// const numsJoinThree = nums.join(' hello ');
+// console.log(numsJoin);
+// console.log(numsJoinTwo);
+// console.log(numsJoinThree);
