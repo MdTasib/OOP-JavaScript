@@ -99,3 +99,83 @@ let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 // console.log(numsJoin);
 // console.log(numsJoinTwo);
 // console.log(numsJoinThree);
+
+// synchronous vs asynchronous function
+// // synchronous
+// console.log(`Task 1`);
+// console.log(`Task 2`);
+// console.log(`Task 3`);
+// console.log(`Task 4`);
+
+// asynchronous
+// function taskOne() {
+//     console.log(`Task 1`);
+// }
+
+// // asyncronous function
+// function taskTwo() {
+//     setTimeout(() => {
+//         console.log(`Task 2`);
+//     }, 1000)
+// }
+// function taskThree() {
+//     console.log(`Task 3`);
+// }
+// function taskFour() {
+//     console.log(`Task 4`);
+// }
+
+// taskOne();
+// taskTwo();
+// taskThree();
+// taskFour()
+
+// callback and higher order function
+// 1 -> don't use callback function
+// function taskOne() {
+//     console.log(`Task 1`)
+// }
+// function taskTwo() {
+//     setTimeout(() => {
+//         console.log(`Task 2`);
+//     }, 1000)
+// }
+// function taskThree() {
+//     console.log(`Task 3`);
+// }
+// function taskFour() {
+//     console.log(`Task 4`);
+// }
+
+// taskOne();
+// taskTwo();
+// taskThree();
+// taskFour()
+
+// 2 useing callback function
+// function taskOne(callback) {
+//     console.log(`Task 1`)
+//     callback()
+// }
+// function taskTwo(callback) {
+//     setTimeout(() => {
+//         console.log(`Task 2`);
+//         callback()
+//     }, 1000)
+// }
+// function taskThree(callback) {
+//     console.log(`Task 3`);
+//     callback()
+// }
+// function taskFour() {
+//     console.log(`Task 4`);
+// }
+
+// // callback function
+// taskOne(() => {
+//     taskTwo(() => {
+//         taskThree(() => {
+//             taskFour()
+//         })
+//     })
+// })
