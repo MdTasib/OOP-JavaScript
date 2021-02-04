@@ -179,3 +179,52 @@ let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 //         })
 //     })
 // })
+
+// promise
+// createing promise
+// const promiseOne = new Promise((resolve, reject) => {
+//     let completePromise = true;
+//     if (completePromise) {
+//         resolve(`completed promiseOne`)
+//     } else {
+//         // 1
+//         reject(`not completed promiseOne`)
+//         // 2
+//         // reject(new Error(`not completed promiseOne`))
+//     }
+// });
+// // useing this promise
+// promiseOne
+//     .then((response) => {
+//         console.log(response)
+//     })
+//     .catch((error) => {
+//         // 1
+//         console.log(error)
+//         // 2
+//         // console.log(error.message)
+//     })
+
+// promise all
+// const promise1 = new Promise((resolve, reject) => {
+//     resolve(`i am promise 1`);
+// });
+// const promise2 = new Promise((resolve, reject) => {
+//     resolve(`i am promise 2`)
+// });
+
+// Promise.all([promise1, promise2])
+//     .then((response) => {
+//         console.log(response);
+//     })
+
+// promise race
+// const promise1 = new Promise((resolve, reject) => {
+//     setTimeout(() => resolve(`i am promise 1`), 2000)
+// });
+// const promise2 = new Promise((resolve, reject) => {
+//     setTimeout(() => resolve(`i am promise 2`), 1000)
+// });
+
+// Promise.race([promise1, promise2])
+//     .then((response) => console.log(response));
