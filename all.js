@@ -228,3 +228,60 @@ let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
 // Promise.race([promise1, promise2])
 //     .then((response) => console.log(response));
+
+
+// promise second way
+// function taskOne() {
+//     return new Promise((resolve, reject) => {
+//         resolve(`i am task one`)
+//     })
+// }
+// function taskTwo() {
+//     return new Promise((resolve, reject) => {
+//         setTimeout(() => {
+//             resolve(`i am task Two`)
+//         }, 2000)
+//     })
+// }
+// function taskThree() {
+//     return new Promise((resolve, reject) => {
+//         resolve(`i am task Three`)
+//     })
+// }
+// function taskFour() {
+//     return new Promise((resolve, reject) => {
+//         resolve(`i am task Four`)
+//     })
+// }
+
+// taskOne()
+//     .then((res) => console.log(res))
+//     .then(taskTwo)
+//     .then((res) => console.log(res))
+//     .then(taskThree)
+//     .then((res) => console.log(res))
+//     .then(taskFour)
+//     .then((res) => console.log(res))
+
+
+// // bind use in Object
+// const person = {
+//     firstName: 'Ohidul',
+//     lastName: 'Alam',
+//     selary: 1000,
+//     getFullname: function () {
+//         console.log(`${this.firstName} ${this.lastName}`);
+//     },
+//     getAmount: function (amount) {
+//         this.selary = this.selary - amount;
+//         return this.selary;
+//     }
+// }
+
+// const friend = {
+//     firstName: 'Rafi',
+//     selary: 2000
+// }
+
+// friendCharge = person.getAmount.bind(friend);
+// console.log(friendCharge(200))
