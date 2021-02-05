@@ -285,3 +285,30 @@ let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
 // friendCharge = person.getAmount.bind(friend);
 // console.log(friendCharge(200))
+
+// // call and apply use in Object
+// const person = {
+//     firstName: 'Ohidul',
+//     lastName: 'Alam',
+//     selary: 20000,
+//     getFullname: function () {
+//         console.log(`${this.firstName} ${this.lastName}`);
+//     },
+//     getAmount: function (amount, tax) {
+//         this.selary = this.selary - (amount + tax);
+//         return this.selary;
+//     }
+// }
+// const friend = {
+//     firstName: 'Rafi',
+//     selary: 2000
+// }
+// // call
+// // person.getAmount.call(friend, 1000, 100);
+// // console.log(friend.selary);
+// // console.log(person.selary);
+
+// // apply
+// person.getAmount.apply(friend, [1000, 100]); // argument golo array kore pass korte hoi
+// console.log(friend.selary);
+// console.log(person.selary);
