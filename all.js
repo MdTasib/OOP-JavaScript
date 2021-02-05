@@ -312,3 +312,22 @@ let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 // person.getAmount.apply(friend, [1000, 100]); // argument golo array kore pass korte hoi
 // console.log(friend.selary);
 // console.log(person.selary);
+
+// // class and object difference
+// // Object
+// const obj = {
+//     name: 'tasib',
+//     age: 19,
+//     country: 'bangladesh'
+// }
+// console.log(obj)
+
+// // class
+// class Person {
+//     constructor(name, age, country) {
+//         this.name = name;
+//         this.age = age;
+//         this.country = country;
+//     }
+// }
+// console.log(new Person('tasib', 19, 'bangladesh'));
