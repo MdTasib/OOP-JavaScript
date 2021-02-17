@@ -361,3 +361,18 @@ let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 //         ul.appendChild(li);
 //     }
 // }
+
+// // Callback Not Always Asynchronous in Javascript
+// // synchronous
+// let arr = [1, 2, 3, 4, 5];
+// let sqrArr = arr.map((v) => v * v);
+// console.log(sqrArr);
+
+// function asyncMap(arr, cb) {
+//     return arr.map(v => {
+//         // setTimeout(cb.bind(null, v), 0);
+//         setTimeout(() => cb(v), 0)
+//     })
+// }
+// let qbArr = asyncMap(arr, (v) => { console.log(v) });
+// console.log(qbArr);
