@@ -376,3 +376,39 @@ let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 // }
 // let qbArr = asyncMap(arr, (v) => { console.log(v) });
 // console.log(qbArr);
+
+// // Introduction to Promise in Javascript
+// /*
+// let p1 = new Promise((resolve, reject) => {
+//     setTimeout(resolve, 3000, 'This is p1');
+// })
+// let p2 = new Promise((resolve, reject) => {
+//     setTimeout(resolve, 2000, 'This is P2');
+// })
+
+// p1.then((p1value) => {
+//     console.log(p1value);
+// })
+// p2.then((p2value) => {
+//     console.log(p2value);
+// })
+// */
+
+// function getMobile(isPassed) {
+//     return new Promise((resolve, reject) => {
+//         setTimeout(() => {
+//             if (isPassed) {
+//                 resolve('I have got a Mobile Phohe');
+//             } else {
+//                 reject(new Error('You are failed'));
+//             }
+//         }, 1000)
+//     })
+// }
+// getMobile(true)
+//     .then((res) => {
+//         console.log(res)
+//     })
+//     .catch((err) => {
+//         console.log(err.message)
+//     })
