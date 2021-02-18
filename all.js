@@ -412,3 +412,52 @@ let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 //     .catch((err) => {
 //         console.log(err.message)
 //     })
+
+
+// // async iterator in javascript
+// let asyncIterable = {
+//     [Symbol.asyncIterable]() {
+//         let i = 0;
+//         return {
+//             next() {
+//                 if (i < 5) {
+//                     return Promise.resolve({
+//                         value: i++,
+//                         done: false
+//                     })
+//                 } else {
+//                     return Promise.resolve({
+//                         done: true
+//                     })
+//                 }
+//             }
+//         }
+//     }
+// }
+
+
+// let iterator = asyncIterable[Symbol.asyncIterable]();
+
+// (async function () {
+//     console.log(await iterator.next());
+//     console.log(await iterator.next());
+//     console.log(await iterator.next());
+//     console.log(await iterator.next());
+//     console.log(await iterator.next());
+//     console.log(await iterator.next());
+// })()
+
+// // Async Generators in Javascript
+// async function* myAsyncGenerator() {
+//     let i = 0;
+//     while (true) {
+//         if (i > 5) return
+//         yield Promise.resolve(i++)
+//     }
+// }
+
+// ; (async function () {
+//     for await (let v of myAsyncGenerator()) {
+//         console.log(v);
+//     }
+// })()
