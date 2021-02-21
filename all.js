@@ -533,3 +533,29 @@ let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 //     return number * 2
 // });
 // console.log(resultNumber);
+
+// // example 2
+
+// let players = [
+//     { name: 'Liton', avg: 42 },
+//     { name: 'Tamim', avg: 37 },
+//     { name: 'Sakib', avg: 33 },
+//     { name: 'Musfiq', avg: 34 },
+//     { name: 'Taskin', avg: 31 },
+// ]
+
+// // without higher order function
+
+// // const playerAvgBigerThirtyfive = [];
+// // for (let i = 0; i < players.length; i++) {
+// //     if (players[i].avg >= 35) {
+// //         playerAvgBigerThirtyfive.push(players[i])
+// //     }
+// // }
+// // console.log(playerAvgBigerThirtyfive);
+
+// // with higher order function
+// const playerAvgBigerThirtyfive = players.filter(function (player) {
+//     return player.avg >= 35;
+// });
+// console.log(playerAvgBigerThirtyfive);
