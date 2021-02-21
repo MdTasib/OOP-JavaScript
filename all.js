@@ -461,3 +461,33 @@ let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 //         console.log(v);
 //     }
 // })()
+
+
+// What is "this" in JavaScript - .call(), .apply() and .bind()
+
+// const person = {
+//     name: 'Tasib',
+//     age: 19,
+//     printName: function () {
+//         console.log(this);
+//         console.log(this.name);
+//     },
+// }
+// person.printName();
+
+// const person = function (name, age) {
+//     return {
+//         name: name,
+//         age: age,
+//         printName: function () { console.log(this.name) },
+//         brother: {
+//             name: 'Rafi',
+//             age: 21,
+//             // printName: function () { console.log(this) },
+//             printName: function () { console.log(this.name) },
+//         }
+//     }
+// }
+// const tasib = person('Tasib', 19);
+// tasib.printName();
+// tasib.brother.printName();
