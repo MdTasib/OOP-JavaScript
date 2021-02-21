@@ -514,3 +514,22 @@ let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 //     console.log(`${this.name} is ${this.age} years old`);
 // }
 // const tasib = new Person('Tasib', 19);
+
+
+// Higher Order Functions
+
+// example 1
+// without higher order function
+// let numbers = [1, 2, 3, 4];
+// let result = [];
+// for (let i = 0; i < numbers.length; i++) {
+//     result.push(numbers[i] * 2);
+// }
+// console.log(result);
+
+// // with higher order function
+// let arrNumbers = [1, 2, 3, 4, 5];
+// const resultNumber = arrNumbers.map(function (number) {
+//     return number * 2
+// });
+// console.log(resultNumber);

@@ -1,1 +1,3 @@
-// Higher Order Functions
+// example 2
+// without higher order function
+
