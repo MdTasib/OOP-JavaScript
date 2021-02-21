@@ -465,6 +465,7 @@ let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
 // What is "this" in JavaScript - .call(), .apply() and .bind()
 
+// implicit binding
 // const person = {
 //     name: 'Tasib',
 //     age: 19,
@@ -491,3 +492,25 @@ let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 // const tasib = person('Tasib', 19);
 // tasib.printName();
 // tasib.brother.printName();
+
+// explicit binding
+// let printName = function () {
+//     console.log(this.name);
+// }
+
+// let person = {
+//     name: 'Tasib',
+//     age: 19
+// }
+// printName.call(person);
+// printName.apply(person);
+// const hello = printName.bind(person);
+// hello();
+
+// new binding
+// function Person(name, age) {
+//     this.name = name;
+//     this.age = age;
+//     console.log(`${this.name} is ${this.age} years old`);
+// }
+// const tasib = new Person('Tasib', 19);
