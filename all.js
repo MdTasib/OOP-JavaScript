@@ -559,3 +559,20 @@ let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 //     return player.avg >= 35;
 // });
 // console.log(playerAvgBigerThirtyfive);
+
+// What is Currying in JavaScript
+// useing currying
+
+// function discount(disc) {
+//     return (price) => {
+//         return price - price * disc;
+//     }
+// }
+
+// let tenPercentDiscount = discount(0.1);
+// let customer1 = tenPercentDiscount(500);
+// let customer2 = tenPercentDiscount(600);
+
+// console.log(customer1);
+// console.log(customer2);
+
