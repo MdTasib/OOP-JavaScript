@@ -6,6 +6,7 @@
 // console.log(obj1);
 
 
+
 // simple object
 let book = {
     name: 'Functional Javascript',
