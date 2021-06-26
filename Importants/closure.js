@@ -12,7 +12,7 @@ const myFunc = sum();
 console.log(myFunc);
 */
 
-// /*
+/*
 
 function bankAccount(initialBalance) {
     let balance = initialBalance;
@@ -23,3 +23,16 @@ function bankAccount(initialBalance) {
 
 let account = bankAccount(1000);
 console.dir(account);
+*/
+
+/*
+var num1 = 2;
+var num2 = 3;
+
+var sum = function () {
+    return num1 + num2;
+}
+
+console.log(sum());
+console.dir(sum);
+*/
