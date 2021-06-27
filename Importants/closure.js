@@ -36,3 +36,25 @@ var sum = function () {
 console.log(sum());
 console.dir(sum);
 */
+
+/*
+function stopWatch() {
+    var startWatch = Date.now();
+
+    function getDelay() {
+        console.log(Date.now() - startWatch);
+    }
+
+    return getDelay;
+}
+
+var timer = stopWatch();
+
+for (var i = 0; i < 100000000; i++) {
+    var a = Math.random() * 1000000;
+}
+
+// timer();
+console.dir(timer);
+*/
+
