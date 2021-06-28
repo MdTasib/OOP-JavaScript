@@ -58,3 +58,21 @@ for (var i = 0; i < 100000000; i++) {
 console.dir(timer);
 */
 
+/*
+var a;
+
+function async() {
+    a = 20;
+
+    var myFunc = () => {
+        console.log(a);
+    }
+    setTimeout(myFunc, 3000);
+
+    console.dir(myFunc);
+}
+
+async();
+
+a = 30;
+*/
