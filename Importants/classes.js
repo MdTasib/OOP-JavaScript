@@ -43,7 +43,7 @@ p.tasib();
 */
 
 // Convert Class
-class Human {
+class Human { // Parent
     constructor(name, age) {
         this.name = name;
         this.age = age;
@@ -54,7 +54,7 @@ class Human {
     }
 }
 
-class Programmer extends Human {
+class Programmer extends Human { // Child
     constructor(name, age, type, country) {
         super(name, age);
         this.name = name;
